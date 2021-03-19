@@ -46,8 +46,8 @@ function openImageClick(event) {
   }
 
   appendClass(); 
-  evt.preventDefault();
-    lightboxImageRef.src = evt.target.dataset.source;
+  event.preventDefault();
+    lightboxImageRef.src = event.target.dataset.source;
   currentIndexImg = artGalleryImg.indexOf(lightboxImageRef.src);
 }
 
